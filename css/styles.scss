@@ -1,0 +1,144 @@
+$lt-gray: white;
+$background-pale: #D1C4E9;
+$background-light: floralwhite;
+$background-jp: black;
+$bodycolor: white;
+$Homecolor: rgb(240, 205, 0);
+$aboutcolor: rgb(240, 70, 0);
+$contactcolor: rgb(72, 255, 0);
+
+// Height Variables //
+
+$carousel-item-height: 300px;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+#loginWord {
+    color: $bodycolor;
+}
+
+.row-header{
+    @include zero-margin(0px, 0px);
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footerHome{
+    background-color: $background-jp;
+    color: $Homecolor;
+    @include zero-margin(20px, 0px);
+}
+
+.footerAbout{
+    background-color: $background-jp;
+    color: $aboutcolor;
+    @include zero-margin(20px, 0px);
+}
+
+.footerContact{
+    background-color: $background-jp;
+    color: $contactcolor;
+    @include zero-margin(20px, 0px);
+}
+
+
+.jumbotronHome {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: $background-jp;
+    color: $Homecolor;
+}
+
+.jumbotronAbout {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: $background-jp;
+    color: $aboutcolor;
+}
+
+.jumbotronContact {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: $background-jp;
+    color: $contactcolor;
+}
+
+.addressHome {
+    font-size: 80%;
+    margin: 0px;
+    color: rgb(240, 205, 0);
+}
+
+.addressAbout {
+    font-size: 80%;
+    margin: 0px;
+    color: rgb(240, 205, 0);
+}
+
+.addressContact {
+    font-size: 80%;
+    margin: 0px;
+    color: rgb(240, 205, 0);
+}
+
+
+body {
+    background-color: $bodycolor;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+     background-color: $background-jp;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background: $background-jp;
+
+    .carousel-item {
+        height: $carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    }
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    color: $background-jp;
+    background-color: $Homecolor;
+
+}
+
+
+.modal-header {
+    background-color: $Homecolor; }
+  
+.modal-body {
+    background-color: $lt-gray; }
+  
+.card {
+    background-color: $lt-gray; }
+  
